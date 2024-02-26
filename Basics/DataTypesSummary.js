@@ -62,3 +62,30 @@ console.log(id === newId)
 
 const heros = ["IronMan", "CaptainAmerica", "Hulk", "Spideman"];
 console.log(typeof heros);
+
+
+
+
+//+++++++++++++++++++++++++++++++Memory+++++++++++++++++++++++++++++++++++++++++++++++++++
+            //Stack(primative)  ,   Heap(non-primative)
+
+    let myName = "prateek";
+    
+    let anotherName = myName;
+    anotherName = "Yash"
+    console.log(myName)
+    console.log(anotherName)
+
+   let userOne = {
+    name:'Ram',
+    age:34,
+    Email: "ram@google.com",
+
+   }
+    
+   let userTwo = userOne;
+   console.log(userTwo)
+   console.log(userOne)
+   userTwo.Email= "prateek@google.com"
+   console.log(userTwo)
+   console.log(userOne)
