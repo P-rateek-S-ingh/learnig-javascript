@@ -1,2 +1,2 @@
 # learnig-javascript
-just to learn some new technology
+learning js to explore more about js application in frontend and backend
