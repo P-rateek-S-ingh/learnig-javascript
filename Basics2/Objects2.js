@@ -79,9 +79,37 @@ const LinkdinUser = {
 
 // console.log(LinkdinUser);
 
-console.log(Object.keys(LinkdinUser)); // It gives output in Array which will be vry helpful in future to iterate various key for project management in database
-console.log(Object.values(LinkdinUser));
-console.log(Object.entries(LinkdinUser))
+// console.log(Object.keys(LinkdinUser)); // It gives output in Array which will be vry helpful in future to iterate various key for project management in database
+// console.log(Object.values(LinkdinUser));
+// console.log(Object.entries(LinkdinUser))
 
-console.log(LinkdinUser.hasOwnProperty('isLoggedIn'));
-console.log(LinkdinUser.hasOwnProperty('isLogged'));
+// console.log(LinkdinUser.hasOwnProperty('isLoggedIn'));
+// console.log(LinkdinUser.hasOwnProperty('isLogged'));
+
+const course = {
+    course_name :'javaScript pe baatcheet',
+    price : 1999,
+    course_Instructor : 'Hitesh Sir '
+}
+
+// Destructuring objects ==> a JavaScript expression that allows us to extract data from arrays, objects, and maps and set them into new, distinct variables.
+
+
+// const {course_Instructor} = course // 1st way
+// console.log(course_Instructor);
+
+// const {course_Instructor: teacher} = course //2nd way you can also modify this course_Instructor variable also acordding to your cnovinence
+// console.log(teacher);
+
+// {
+//     "name" : "Prateek",                               -|
+//     "course_name": "javaScript pe baatcheet"           |>--> jason
+//     "price": "999"                                    -|
+// }
+
+
+[
+    {},
+    {},
+    {}
+]
