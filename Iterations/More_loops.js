@@ -28,17 +28,22 @@ map.set("IN" , "India")
 // console.log(map)
 
 for(const [key, val] of map){
-    // console.log(key , ":-)" , val);
+    if(key == 'FR'){
+        continue
+    }
+    console.log(key , ":-)" , val);
 }
 
 
-const Games ={
-    name:'God of War',
-    Type:'Story & Action',
-    Lead_Character:'Kratos'
 
-}
 
-for(const [key,value] of Games){
-    console.log(key,"->", value);
-}
+// const Games ={
+//     name:'God of War',
+//     Type:'Story & Action',
+//     Lead_Character:'Kratos'
+
+// }
+
+// for(const [key,value] of Games){
+    // console.log(key,"->", value);
+// }
