@@ -42,6 +42,6 @@ learn()
 // const addTwonum = (num1,num2) =>  num1+num2  // implicit return
 // const addTwonum = (num1,num2) =>  (num1+num2)
 const addTwonum = (num1,num2) => ({username :'Raghav singh'})   //  To return a object it should be wrapped within parenthesses then only it returns value
-console.log(addTwonum(10,35));
+console.log(addTwonum(1,2));
 
 
