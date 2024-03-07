@@ -17,24 +17,27 @@
     </div>
     <script>
         const parent = document.querySelector(".parent")
-        console.log(parent);
-        console.log(parent.children)
+        // console.log(parent);
+        // console.log(parent.children)
         for(let i = 0 ; i < parent.children.length ; i++){
-            console.log(parent.children[i]);
+            // console.log(parent.children[i]);
         }
-        console.log(parent.children[2].innerText);
-        console.log(parent.children[1].innerText);
+        // console.log(parent.children[2].innerText);
+        // console.log(parent.children[1].innerText);
         parent.children[0].style.color = 'Red'
         parent.children[5].style.color = 'Green'
         parent.children[6].style.color = 'Orange'
 
-        console.log(parent.firstElementChild);
-        console.log(parent.lastElementChild);
+        // console.log(parent.firstElementChild);
+        // console.log(parent.lastElementChild);
 
         const day = document.querySelector('.days')
-        console.log(day);
-        console.log(day.parentElement);
-        console.log(day.nextElementSibling);
+        // console.log(day);
+        // console.log(day.parentElement);
+        // console.log(day.nextElementSibling);
+
+
+        console.log("NODE :", parent.childNodes );
 
     </script>
 </body>
