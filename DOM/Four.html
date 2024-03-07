@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body style="background-color: #212121; color: whitesmoke;">
+    <ul class="languages">
+        <li class="high-level-lang">Java</li>
+        <li class="high-level-lang">JavaScript</li>
+        <li class="high-level-lang">Ruby</li>
+        <li class="high-level-lang">python</li>
+        <li class="high-level-lang">Swift</li>
+    </ul>
+</body>
+<script>
+    function addLang(lang){
+        const li = document.createElement('li')
+        li.innerText = `${lang}`
+        document.querySelector('.languages').appendChild(li)
+    }
+    addLang('Kotlin')
+    addLang('TypeScript')
+
+    function addoptilang(lang){
+        const li = document.createElement('li')
+        li.appendChild(document.createTextNode(lang))
+        document.querySelector('.languages').appendChild(li)
+    }
+    addoptilang('Golang')
+    addoptilang('C#')
+
+    //Edit
+    const EditLang = document.querySelector('li:nth-child(9)')
+    // EditLang.innerText = 'Mojo'     // it not the best way to do it try optimized ways
+
+    const newli = document.createElement('li')
+    newli.textContent = 'Mojo'
+    EditLang.replaceWith(newli)
+
+    const firstLang = document.querySelector('li:first-child')
+    firstLang.outerHTML = '<li> Rust </li>'
+
+    //Remove Element
+
+    // const removeElement = document.querySelector('li:nth-child(7)')
+    // removeElement.remove()
+
+    const removeElement = document.querySelector('li:last-child')
+    removeElement.remove()
+
+    
+
+
+
+
+</script>
+</html>
