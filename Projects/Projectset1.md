@@ -69,9 +69,9 @@ form.addEventListener('submit', (e) => {
   const weightguied = document.querySelector('#weight-guide')
   if(bmi(weight,height) < 18.6){
     weightguied.innerHTML = `You are underweight `
-  }else if(bmi(weight,height) >=18.6 && bmi < 24.9){
+  }else if(bmi(weight,height) >=18.6 && bmi(weight,height) < 24.9){
     weightguied.innerHTML = `You weight is normal`
-  }else{
+  }else if(bmi(weight,height) > 24.9){
     weightguied.innerHTML = `You weight is overweight}`
   }
 })
